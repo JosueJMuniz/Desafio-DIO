@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introdução a HTMl</title>
+        <Style>
+            body{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: smaller;
+                text-align: justify;
+            }
+        </Style>
+    </head>
+    <body>
+        <h1 id="inicio">Introdução a HTML na Prática</h1>
+        <hr>
+        <h3>Índice</h3>
+        <ul>
+            <li><a href="#estruturaBasica">Estrutura Básica do HTML</a></li><sup>Aula 01</sup>
+            <li><a href="#falandoTags">Falando Sobre Tags</a></li><sup>Aula 02</sup>
+            <li><a href="#atributos">Atributos das Tags</a></li><sup>Aula 03</sup>
+            <li><a href="#tipografia">Textos - Tipografia</a></li><sup>Aula 04</sup>
+            <li><a href="#listas">Listas Ordenadas e Não Ordenadas</a></li><sup>Aula 05</sup>
+            <li><a href="#links">Links</a></li><sup>Aula 06</sup>
+            <li><a href="#referencias">Referências</a></li><sup>Links Ùteis</sup>
+            
+        </ul>
+        <h2 id="estruturaBasica">Estrutura Básica do HTML</h2>
+        <small><a href="#inicio" title="Voltar ao ìndice!">(Voltar)</a></small>
+
+        <p>
+            A tag <strong>< html></strong>> define que tudo o que estiver entre ela faz parte do documento html.<br>
+            Essa tag <strong>< head></strong> significa cabeçalho nela estão informações sobre nosso documento html, como a tag <strong>< title></strong> se refere ao título que será exibido na aba do nosso navegador. Essas informações não são visíveis para o cliente.<br>
+            Dentro da tag <strong>< body></strong> temos tudo o que vai aparecer para o usuário, é onde o conteúdo da nossa página será inserido.<br>
+        </p>
+        <h2 id="falandoTags">Falando Sobre Tags</h2>
+        <small><a href="#inicio" title="Voltar ao ìndice!" >(Voltar)</a></small>
+        <p>
+            Tag <strong>< i></strong> essa tag deixa em <i>itálico</i> o que estiver entre ela.<br>
+            Tag <strong>< strong></strong> formata o caractere em <strong>negrito</strong><br>
+            Tag <strong>< /br>  </strong>usada como quebra de linha.<br></br>
+            Algumas Tags não possuem uma tag de fechamento, uma delas por exemplo é a tag <strong>< input></strong> que por si só gera um campo para digitação.<br>
+            <input type="text"><br>
+            Outro exemplo é a tag <strong>< img></strong>  que aceita argumentos/atributos, mas não possui uma tag de fechamento.<br>
+            <strong>Atributos</strong> são uma forma de configurar para que o elemento seja exibido de uma forma personalizada.<br>
+            Exemplo: a tag < input> também pode receber o atributo <strong>date</strong>:<br>
+            <input type="date">
+        </p>
+        <h2 id="atributos">Atributos das Tags</h2>
+        <small><a href="#inicio" title="Voltar ao ìndice!">(Voltar)</a></small>
+        <p>
+           Como dito antes sobre os atributos propriedades que as tags podem ter alguns desses atributos são globais, ou seja, servem para a maioria das tags, outros são específicos a cada tag.<br>
+           Propriedades/Atributos Globais:
+           <ul>
+                <li> As tags <strong>< p> e < h1></h1></strong> entre outras, podem conter o atributo global <strong> "id"</strong>, que serve como um identificador deste elemento. No javascript, é possível alterar as propriedades de um elemento ou grupo através desse atributo.</li>
+                <li>Atributo <strong>style</strong>, usado no CSS interno, externo e inline, para modificar o estilo de “apresentação” de um elemento.</li>
+                <li>Atributo <strong>class = " "</strong>: com função semelhante ao id o class pode ser usado para padronizar o estilo de um grupo de elemento com essa tag.</li>
+                <li>O elemento <strong>< input></strong> muito usado em formulários, possui o atributo <strong>type</strong> específico, que pode variar de <strong>text</strong>, <strong>date</strong> entre outros, esse type quando dentro do elemento < input> pode assumir diversas funções.<br>
+                </li>
+                <li><strong>type = “number” </strong>(cria um campo com valores numéricos)<br>
+                <input type="number"></li>
+                <li><strong>type = “color” </strong>(cria um campo com um seletor de cores)<br>
+                <input type="color"></li>
+                
+                <li>
+                    A tag <strong>< img></strong> recebe como atributo o  <strong>src = " "</strong>  de source onde entre aspas é inserido o caminho do arquivo ou link onde está a imagem que desejamos inserir em nossa página.<br>
+                    <strong>Exemplo:</strong><br>
+                    <img width ="240" src="https://neilpatel.com/wp-content/uploads/2017/12/codigos-html-para-paginas-web.jpeg">
+                </li>
+                <li>
+                    O elemento <strong>< img></strong> também pode receber o atributo <strong>width = “150”</strong> usado para definir largura, altura, comprimento da imagem selecionada.
+                    <strong>  < img width ="300" src= "img/ex1.png"></strong>
+                </li>
+            </ul>
+           
+        
+        </p>
+        <h2 id="tipografia">Textos - Tipografia</h2>
+        <small><a href="#inicio" title="Voltar ao ìndice!">(Voltar)</a></small>
+        <p>
+            As tags responsáveis pela exibição de títulos são <strong>< h1> < /h1></strong> que varia em níveis até o <strong>< h6>< /h6></strong> 
+            onde h1 é um nível mais alto o h2 é um subtítulo e assim por diante. O h dessa tag significa header/cabeçalho;
+            <ul>
+                <thead><strong>Exemplo:</strong></thead>
+                <li>
+                    < h1>Formatando Textos com HTML< /h1><br> 
+                    < h2>Aula 06< /h2><br>
+                    < h3>DIO.me< /h3>
+                </li><br>
+                <img width="250" src="img/ex1.png">
+            </br>
+                <li> Entre as tags úteis para a formatação de um texto em html, temos a tag <strong>< mark>< /mark></strong> inserida quando desejamos marcar de forma colorida uma frase, palavra ou texto.
+                </li>
+                <thead><strong>Exemplo:</strong></thead>
+                <mark>Lorem ipsum dolor sit amet consectetur adipis</mark>
+               <br>
+                <li>
+                    A tag <strong>< sup></strong> sobrescrito, possibilita que um caractere ou frase se posicione acima da linha de letras de tamanho normal.
+                </li> 
+                    <thead><strong>Exemplo:</strong></thead>
+                    <h3>Lorem <sup>ipsum</sup></h3>
+               
+                <li>
+                    Támbem temos a tag <strong>< sub></strong> subscrito, que realiza o contrário o caractere fica abaixo das letras normais.
+                </li>
+                <thead><strong>Exemplo:</strong></thead>
+                    <h3>Lorem <sub>ipsum</sub></h3>
+                <li>Tag <strong>< small></strong>  usado com a finalidade de inserir uma pequena frase, ou palavra dentro do documento.</li>
+                <thead><strong>Exemplo:</strong></thead>
+                    <small>Lorem ipsum</small>
+                <br></br>
+                <li>
+                    Tag <strong>< del></strong> define um texto a ser deletado do documento. O navegador usualmente vai traçar uma linha através do texto deletado.<br>
+                    Seguido da tag <strong>< inst></strong> que insere a correção do que foi deletado. O navegador irá sublinhar a nova parte inserida.
+                </li>
+                <thead><strong>Exemplo:</strong></thead>
+                   <div>Lorem <del>ipsum</del> <ins>dolor</ins></div>
+                   <br></br>
+                <li>
+                    Tag <strong>< font></strong> essa tag é utilizada para especificar a aparência da fonte, tamanho e a cor do texto.
+                    
+                </li>
+                <thead><strong>Exemplo:</strong></thead>
+                <div style="font-size: small; color: blue;">Texto estilizado usando a tag < font></div>
+                <br></br>
+                <li>
+                    Tag <strong>< abbr></strong> essa tag define uma abreviação ou acrônimo "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM". Use o atributo global <strong>"title"</strong> para<br>
+                    exibir a descrição da abreviação/acrônimo quando passar com o mouse sobre o elemento.
+                </li>
+                <thead><strong>Exemplo:</strong></thead>
+                <div>O <abbr title="Cascading Style Sheet">CSS </abbr>foi proposto pela primeira vez em 1994.</div>
+                <br></br>
+                <li>Tag <strong>< blockquote></strong> usada para especificar uma citação tirada de uma outra fonte.</li>
+                <thead><strong>Exemplo:</strong></thead>
+                <blockquote cite="https://www.w3schools.com/tags/tag_blockquote.asp">Os navegadores usualmente indentam o elemento < blockquote></blockquote>
+                <li></li>
+            </ul>
+        </p>
+        <p>
+            <h2 id="listas">Listas Ordenadas e Não Ordenadas</h2>
+            <small><a href="#inicio" title="Voltar ao ìndice!">(Voltar)</a></small>
+            <div>
+                <h3>Listas Ordenadas seguem a seguinte sintaxe:</h3><br>
+            </div>
+            <div>A tag <strong>< ol></strong> define uma lista ordenada. Listas ordenadas podem ser numericas ou alfabéticas.
+                Use a tag <strong>< li></strong> de list item para definir cada item da lista.<br>
+                Listas ordenadas podem ainda conter o atributo <strong>start = ""</strong> usado para definir o início de uma listagem.
+                E também o atributo <strong>type = ""</strong> para definir o tipo de lista.
+            </div>
+            <thead><strong>Exemplo:</strong></thead> <thead><strong>Lista Ordenada Numérica</strong></thead>
+            <ol start="">
+                <li>Café</li>
+                <li>Chá</li>
+                <li>Leite</li>
+            </ol>
+            <br></br>
+            <thead><strong>Exemplo:</strong></thead> <thead><strong>Lista Ordenada Alfabética</strong></thead>
+            <ol type="A">
+                <li>Café</li>
+                <li>Chá</li>
+                <li>Leite</li>
+            </ol>
+            <div>
+                <h3>Listas Não Ordenadas seguem a seguinte sintaxe:</h3><br>
+            </div>
+            <div>A tag <strong>< ul></strong> define uma lista não ordenada. Use a tag <strong>< li></strong> de list item para definir cada item da lista.<br>
+                Listas ordenadas podem ainda conter o atributo <strong>style = ""</strong> para definir o tipo de marcação da lista.
+            </div>
+            <thead><strong>Exemplo:</strong></thead> <thead><strong>Lista Não Ordenada style ="square"</strong></thead>
+            <ul style="list-style-type: square;">
+                <li>Café</li>
+                <li>Chá</li>
+                <li>Leite</li>
+            </ul>
+        </p>
+        <p>
+            <h2 id="links">Falando Sobre Links</h2>
+            <small><a href="#inicio" title="Voltar ao ìndice!">(Voltar)</a></small>
+            <div>
+                A tag <strong>< a></strong> define a marcação de um hyperlink, usada para linkar de uma página para outra.<br>
+                O atributo mais importante do elemento < a>  é o <strong>href</strong>, o qual indica o destino do link.
+                Por padrão, os links aparecem da sequinte forma em todos os navegadores:<br>
+            </div>
+            <ul>
+                <li>Um link não visitado é sublinhado e azul.</li>
+                <li>Se o link já foi visitado ele é sublinhado e roxo.</li>
+                <li>Um link ativo é sublinhado e vemelho quando clicado.</li>
+            </ul>
+            <div>
+                A tag de link < a> pode ser acompanhada do atributo <strong>target = "_blank"</strong> . Com a função de redirecionar o link para
+                ser aberto em outra aba/página.
+                Outro atributo complementar é o <strong>title = " "</strong>,  tem a função de adicionar um informativo sobre o link que será usado assim que o cursor estiver em cima. 
+            </div>
+            <thead><strong>Exemplo:</strong></thead>
+            <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank" title="Clique e Saiba Mais">Mais Sobre HTML</a>
+            <br></br>
+            <div>
+                <strong>OBS!</strong> - Outra característica dos links é que além de linkar páginas externas dentro do projeto, podem também servir como ferramenta de navegação no site, fazendo uma ancoragem e ligando tópicos a parágrafos dentro da página por exemplo. 
+            </div>
+        </p>
+        <p>
+            <h2>Referências:</h2>
+            <ul>
+                <li>Artigo: HTML5 Entendendo a Estrutura e a Semântica - <a href="https://medium.com/@eduagni/html5-entendendo-a-estrutura-e-a-semântica-db5f17808c7">Clique Aqui!</a></li>
+                <li>Vídeo Aula Canal da DIO: Introdução ao HTML - <a href="https://www.youtube.com/watch?v=o0UZNUuFsvA">Clique Aqui!</a></li>
+                <li>O primeiro Web Site criado por Tim Berners-Lee: <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">Clique Aqui!</a></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </p>
+    </body>
+</html>
